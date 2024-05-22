@@ -1,0 +1,58 @@
+body {
+    background-image: url('/assets/desktop_bg/ocean-home.png'); 
+    background-repeat: no-repeat; 
+    background-size: 100% 100vh;
+    background-attachment: fixed;
+}
+
+/* Styling for the header and nav */
+.header nav {
+    width: max(60%, 10rem);
+    padding: 1vw 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(7, 15, 43, 0.8);
+    opacity: 0.8;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: rgba(99, 99, 99, 0.5) 0px 2px 8px 0px;
+    position: sticky;
+}
+
+/* Styling for the nav links */
+.header a {
+    text-decoration: none;
+    color: white;
+    font-family: "Inika", serif;
+    font-weight: bolder;
+    font-size: larger;
+    font-style: normal;
+    transition-duration: 0.4s;
+}
+
+.header nav .active-link {
+    color: gold;
+}
+
+.header nav .active-link:active {
+    color: gold;
+}
+
+.header nav .forest-link:active {
+    color: orange;
+}
+
+.header nav .ocean-link:active {
+    color: lightseagreen;
+}
+
+.header a:hover {
+    color: cyan;
+    animation-duration: 0.7s;
+}
+
+.header .about-link:active {
+    color: pink;
+}
