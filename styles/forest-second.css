@@ -7,7 +7,7 @@
 }
 
 body {
-    background-image: url('/assets/desktop_bg/forest_1.png');
+    background-image: url('/assets/desktop_bg/forest_2.png');
     background-repeat: no-repeat; 
     background-size: 100% 100vh;
     background-attachment: fixed;
@@ -65,22 +65,6 @@ body {
     animation-duration: 0.7s;
 }
 
-/* Customizing the Forest Container */
-.forest-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 40px 10px;
-}
-
-.forest-container img {
-    border: 5px solid #430A5D;
-    border-radius: 26px;
-    height: 300px;
-    width: 100%;
-    object-fit: fill;
-}
-
 /* Customizing the Forest Container Content */
 .forest-container-content {
     padding: 15px 9%;
@@ -105,6 +89,7 @@ body {
 /* Customizing Images of the content */
 .forest-container-content .box-container .box img {
     height: 240px;
+    width: 240px;
     border: 2px solid #430A5D;
     border-radius: 20px;
 }

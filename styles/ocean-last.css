@@ -1,5 +1,4 @@
 * {
-    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
     outline: none;
     text-decoration: none;
@@ -7,7 +6,7 @@
 }
 
 body {
-    background-image: url('/assets/desktop_bg/forest_1.png');
+    background-image: url('/assets/desktop_bg/ocean_3.png');
     background-repeat: no-repeat; 
     background-size: 100% 100vh;
     background-attachment: fixed;
@@ -48,37 +47,21 @@ body {
     color: pink;
 }
 
-.header nav .active-link {
+.header .forest-link:active {
     color: orange;
+}
+
+.header nav .active-link {
+    color: lightseagreen;
 }
 
 .header nav .active-link:active {
-    color: orange;
-}
-
-.header nav .ocean-link:active {
     color: lightseagreen;
 }
 
 .header a:hover {
     color: cyan;
     animation-duration: 0.7s;
-}
-
-/* Customizing the Forest Container */
-.forest-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 40px 10px;
-}
-
-.forest-container img {
-    border: 5px solid #430A5D;
-    border-radius: 26px;
-    height: 300px;
-    width: 100%;
-    object-fit: fill;
 }
 
 /* Customizing the Forest Container Content */
@@ -99,12 +82,13 @@ body {
     border-radius: 10px;
     background: #fff;
     text-align: center;
-    padding: 30px 20px;
+    padding: 20px 20px;
 }
 
 /* Customizing Images of the content */
 .forest-container-content .box-container .box img {
-    height: 240px;
+    height: 130px;
+    width: 240px;
     border: 2px solid #430A5D;
     border-radius: 20px;
 }

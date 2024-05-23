@@ -1,3 +1,11 @@
+* {
+    font-family: "Inika", serif;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
 body {
     background-image: url('/assets/desktop_bg/about.png'); 
     background-repeat: cover; 
@@ -135,4 +143,20 @@ body {
     text-align: center;
     padding: 10px 30px;
     margin: 0 auto;
+}
+
+/* Footer Customization */
+footer {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    color: #000;
+    text-align: center;
+}
+
+footer p {
+    font-family: "Inika", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
 }

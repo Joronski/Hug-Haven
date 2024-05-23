@@ -1,3 +1,11 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
 body {
     background-image: url('/assets/desktop_bg/ocean-home.png'); 
     background-repeat: no-repeat; 
