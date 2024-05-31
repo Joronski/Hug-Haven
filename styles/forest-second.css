@@ -160,6 +160,14 @@ footer p {
 
 /* Media Query */
 @media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        background-image: url('/assets/tablet_bg/forest-tablet-2.png');
+    }
+
+    .header nav {
+        width: max(70%, 10rem);
+    }
+
     .forest-container-content {
         padding: 20px;
     }
@@ -170,6 +178,28 @@ footer p {
 }
 
 @media (min-width: 480px) and (max-width: 768px) {
+    body {
+        background-image: url('/assets/tablet_bg/forest-tablet-2.png');
+    }
+
+    .header nav {
+        width: max(80%, 10rem);
+    }
+
+    .forest-container-content .box-container {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 479px) {
+    body {
+        background-image: url('/assets/mobile_bg/forest-mobile-2.png');
+    }
+
+    .header nav {
+        width: max(100%, 10rem);
+    }
+
     .forest-container-content .box-container {
         gap: 20px;
     }

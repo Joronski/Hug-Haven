@@ -160,3 +160,42 @@ footer p {
     font-style: normal;
     font-size: 20px;
 }
+
+/* Media Query */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .header nav {
+        width: max(70%, 10rem);
+    }
+
+    .site_description {
+        margin: 40px 70px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+    body {
+        background-image: url('/assets/tablet_bg/about-tablet.png'); 
+    }
+
+    .header nav {
+        width: max(80%, 10rem);
+    }
+
+    .site_description {
+        margin: 40px 50px;
+    }
+}
+
+@media (max-width: 479px) {
+    body {
+        background-image: url('/assets/mobile_bg/about-mobile.png');
+    }
+
+    .header nav {
+        width: max(100%, 10rem);
+    }
+
+    .site_description {
+        margin: 40px 30px;
+    }
+}
