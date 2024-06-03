@@ -1,0 +1,201 @@
+* {
+    font-family: "Inika", serif;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+body {
+    background-image: url('/assets/desktop_bg/about.png'); 
+    background-repeat: cover; 
+    background-size: 100% 100vh;
+    background-attachment: fixed;
+    color: #fff;
+    font-family: "Inika", serif;
+    font-weight: bolder;
+    font-style: normal;
+}
+
+/* Styling for the header and nav */
+.header nav {
+    width: max(60%, 10rem);
+    padding: 1vw 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(7, 15, 43, 0.8);
+    opacity: 0.8;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: rgba(99, 99, 99, 0.5) 0px 2px 8px 0px;
+    position: sticky;
+}
+
+/* Styling for the nav links */
+.header a {
+    text-decoration: none;
+    color: white;
+    font-family: "Inika", serif;
+    font-weight: bolder;
+    font-size: larger;
+    font-style: normal;
+    transition-duration: 0.4s;
+}
+
+.header nav .active-link {
+    color: pink;
+}
+
+.header a:hover {
+    color: cyan;
+    animation-duration: 0.7s;
+}
+
+.header a:active {
+    color: pink;
+}
+
+.header .home-link:active {
+    color: gold;
+}
+
+.header nav .forest-link:active {
+    color: orange;
+}
+
+.header nav .ocean-link:active {
+    color: lightseagreen;
+}
+
+/* Styling About Description */
+.site_description {
+    background-color: rgb(7, 15, 43, 0.8);
+    border-radius: 10px;
+    text-align: center;
+    margin: 40px 100px;
+    padding: 10px 30px;
+}
+
+/* Container for image and text */
+.bea_description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Styling the images of the authors */
+.bea_description img {
+    height: 229px;
+    width: 244px;
+    margin: 0 auto;
+}
+
+/* Centering the text horizontally and vertically */
+.bea_description .bea-text {
+    background-color: rgb(7, 15, 43, 0.8);
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 30px;
+    margin: 0 auto;
+}
+
+.joron_description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.joron_description img {
+    height: 229px;
+    width: 210px;
+    margin: 0 auto;
+}
+
+.joron_description .joron-text {
+    background-color: rgb(7, 15, 43, 0.8);
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 30px;
+    margin: 0 auto;
+
+}
+
+.alexa_description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.alexa_description img {
+    height: 229px;
+    width: 229px;
+    margin: 0 auto;
+}
+
+.alexa_description .alexa-text {
+    background-color: rgb(7, 15, 43, 0.8);
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 30px;
+    margin: 0 auto;
+}
+
+/* Footer Customization */
+footer {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    color: #000;
+    text-align: center;
+}
+
+footer p {
+    font-family: "Inika", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+}
+
+/* Media Query */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .header nav {
+        width: max(70%, 10rem);
+    }
+
+    .site_description {
+        margin: 40px 70px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+    body {
+        background-image: url('/assets/tablet_bg/about-tablet.png'); 
+    }
+
+    .header nav {
+        width: max(80%, 10rem);
+    }
+
+    .site_description {
+        margin: 40px 50px;
+    }
+}
+
+@media (max-width: 479px) {
+    body {
+        background-image: url('/assets/mobile_bg/about-mobile.png');
+    }
+
+    .header nav {
+        width: max(100%, 10rem);
+    }
+
+    .site_description {
+        margin: 40px 30px;
+    }
+}

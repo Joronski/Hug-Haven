@@ -1,0 +1,237 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+body {
+    background-image: url('/assets/desktop_bg/ocean_1.png'); 
+    background-repeat: no-repeat; 
+    background-size: 100% 100vh;
+    background-attachment: fixed;
+}
+
+/* Styling for the header and nav */
+.header nav {
+    width: max(60%, 10rem);
+    padding: 1vw 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(7, 15, 43, 0.8);
+    opacity: 0.8;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: rgba(99, 99, 99, 0.5) 0px 2px 8px 0px;
+    position: sticky;
+}
+
+/* Styling for the nav links */
+.header a {
+    text-decoration: none;
+    color: white;
+    font-family: "Inika", serif;
+    font-weight: bolder;
+    font-size: larger;
+    font-style: normal;
+    transition-duration: 0.4s;
+}
+
+.header nav a:hover {
+    color: cyan;
+    animation-duration: 0.7s;
+}
+
+.header nav .home-link:active {
+    color: gold;
+}
+
+.header nav .forest-link:active {
+    color: orange;
+}
+
+.header nav .active-link {
+    color: lightseagreen;
+}
+
+.header nav .active-link:active {
+    color: lightseagreen;
+}
+
+.header nav .about-link:active {
+    color: pink;
+}
+
+.ocean-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 10px;
+}
+
+.ocean-container img {
+    border: 5px solid #430A5D;
+    border-radius: 26px;
+    height: 300px;
+    width: 100%;
+    object-fit: fill;
+}
+
+/* Customizing the Forest Container */
+.ocean-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 10px;
+}
+
+.ocean-container img {
+    border: 5px solid #430A5D;
+    border-radius: 26px;
+    height: 300px;
+    width: 100%;
+    object-fit: fill;
+}
+
+/* Customizing the Forest Container Content */
+.ocean-container-content {
+    padding: 15px 9%;
+    padding-bottom: 100px;
+}
+
+.ocean-container-content .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 100px;
+}
+
+.ocean-container-content .box-container .box {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    border: 4px solid #430A5D;
+    border-radius: 10px;
+    background: #fff;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+/* Customizing Images of the content */
+.ocean-container-content .box-container .box img {
+    height: 240px;
+    width: 240px;
+    border: 2px solid #430A5D;
+    border-radius: 20px;
+}
+
+/* Customizing Text of the content */
+.ocean-container-content .box-container .box h3 {
+    color: #430A5D;
+    font-family: "Indie Flower", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+
+.ocean-container-content .box-container .box .btn {
+    display: inline-block;
+    border: 1px solid #430A5D;
+    border-radius: 30px;
+    background: #6148FB;
+    color: #fff;
+    font-size: 20px;
+    font-family: "Love Ya Like A Sister", cursive;
+    font-weight: 400;
+    font-style: normal;
+    padding: 8px 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -40px 10px -35px inset;
+}
+
+.ocean-container-content .box-container .box .btn:hover {
+    letter-spacing: 1px;
+}
+
+.ocean-container-content .box-container .box:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .3);
+    transform: scale(1.03);
+}
+
+/* Customizing circle button to transition another page */
+.ocean-container-content .circle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.ocean-container-content .circle-container .circle {
+    margin: 0 10px;
+}
+
+.ocean-container-content .circle-container .circle:hover {
+    transform: scale(1.5);
+}
+
+/* Footer Customization */
+footer {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
+
+footer p {
+    font-family: "Inika", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+}
+
+/* Media Query */
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        background-image: url('/assets/tablet_bg/ocean-tablet-1.png');
+    }
+
+    .header nav {
+        width: max(70%, 10rem);
+    }
+
+    .ocean-container-content {
+        padding: 20px;
+    }
+
+    .ocean-container-content .box-container {
+        gap: 50px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+    body {
+        background-image: url('/assets/tablet_bg/ocean-tablet-1.png');
+    }
+
+    .header nav {
+        width: max(80%, 10rem);
+    }
+
+    .ocean-container-content .box-container {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 479px) {
+    body {
+        background-image: url('/assets/mobile_bg/ocean-mobile-1.png');
+    }
+
+    .header nav {
+        width: max(100%, 10rem);
+    }
+
+    .ocean-container-content .box-container {
+        gap: 20px;
+    }
+}
